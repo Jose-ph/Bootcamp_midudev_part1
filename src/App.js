@@ -1,5 +1,7 @@
 
 import './App.css';
+import './Mensaje_module.js'
+import MENSAJE_MODULO from './Mensaje_module.js';
 
 
 const Mensaje = (props)=> {
@@ -37,9 +39,11 @@ const  App = ()=> {
            
       <Mensaje color ="red"  message ="Estamos en un curso" />
       <Mensaje color="green"  message ="de desarollo web Full Stack" />
-      <Mensaje color ="blue" message="guiados por Midudev" />
+      <Mensaje color ="blue" message="con React" />
 
       < Description/>
+
+      <MENSAJE_MODULO/>
       
       
      
