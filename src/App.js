@@ -7,7 +7,7 @@ const Mensaje = (props)=> {
   console.log(props)
   return(
 
-    <h1>{props.message}</h1>
+    <h1 style={{color:props.color}}  >   {props.message}</h1>
 
   )
 }
@@ -35,9 +35,9 @@ const  App = ()=> {
 
       <h1>Hola Manola</h1>
            
-      <Mensaje message ="Estamos en un curso" />
-      <Mensaje message ="de desarollo web Full Stack" />
-      <Mensaje message="guiados por Midudev" />
+      <Mensaje color ="red"  message ="Estamos en un curso" />
+      <Mensaje color="green"  message ="de desarollo web Full Stack" />
+      <Mensaje color ="blue" message="guiados por Midudev" />
 
       < Description/>
       
