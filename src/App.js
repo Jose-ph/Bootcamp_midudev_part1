@@ -6,7 +6,7 @@ import MENSAJE_MODULO from './Mensaje_module.js';
 
 const Mensaje = (props)=> {
 
-  console.log(props)
+ //console.log(props)
   return(
 
     <h1 style={{color:props.color}}  >   {props.message}</h1>
