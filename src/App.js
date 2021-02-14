@@ -1,31 +1,50 @@
 
 import './App.css';
 
+
+const Mensaje = (props)=> {
+
+  console.log(props)
+  return(
+
+    <h1>{props.message}</h1>
+
+  )
+}
+
+const Description = () => {
+
+  return(
+
+    <p>Hola manola soy una descripción hecha desde otro componente</p>
+  )
+}
+
+
+
+
+
 const  App = ()=> {
 
-  const mensaje = "Hola Mundo";
-  const a = 3;
-  const b = 18;
-
+  
+  
 
 
   return (
     <div className="App">
 
-      <h1>Titulo de la app</h1>
+      <h1>Hola Manola</h1>
+           
+      <Mensaje message ="Estamos en un curso" />
+      <Mensaje message ="de desarollo web Full Stack" />
+      <Mensaje message="guiados por Midudev" />
 
-      Hola manola <br/>
-
-      {mensaje + ' 2021'} <br/>
-
-      <strong>Estamos trabajando en ello...</strong>
-
-      <div>
-        <p>El resultado es : {a+b} </p>
-      </div>
+      < Description/>
+      
+      
      
     </div>
-  );
+  )
 }
 
 export default App;
