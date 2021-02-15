@@ -6,14 +6,36 @@ import {useState} from 'react'
 
 const App = (props) => {
 
+  let [counterValue, updateCounter] = useState(0)
 
-  let contador = 0
+ /* 
+  let counter = useState(2)
+
+  let counterValue = counter[0]
+  let updateCounter = counter[1]
+
+ */
+  
   
 
   return (
     <div>
 
-     <h1> El contador está en {contador} </h1>
+     <h1> El contador está en {counterValue} </h1>
+
+     <button onClick = {() => {
+       
+       updateCounter(counterValue + 1)
+      
+     }} >Aumentar</button>
+
+     <button onClick = {()=>{
+
+      updateCounter(counterValue - 1)
+      
+
+
+     }} >Disminuir</button>
       
      
       
