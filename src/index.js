@@ -16,18 +16,23 @@ const App = (props) => {
 
  */
   
-  
+  const handleClick = () => {
+
+    updateCounter(counterValue + 1)
+    console.log("Sumé 1")
+
+  }
+
+  const esPar = counterValue % 2 === 0
+
+  const MensajePar = esPar ? 'El número es par' : 'El número es impar'
 
   return (
     <div>
 
      <h1> El contador está en {counterValue} </h1>
 
-     <button onClick = {() => {
-       
-       updateCounter(counterValue + 1)
-      
-     }} >Aumentar</button>
+     <button onClick = {handleClick}>Aumentar</button>
 
      <button onClick = {()=>{
 
@@ -36,6 +41,8 @@ const App = (props) => {
 
 
      }} >Disminuir</button>
+
+     <p>{MensajePar}</p>
       
      
       
