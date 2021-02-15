@@ -10,24 +10,49 @@ const Header = (props) => {
 
 }
 
-const Content = (props) => {
+const Part1 = () =>{
+
+  const part1 = 'Fundamentals of React'
+  const exercises1 = 10
 
   return (
 
-     <div>
-         <p>
-        {props.part1} {props.exercises1}
-      </p>
-      <p>
-        {props.part2} {props.exercises2}
-      </p>
-      <p>
-        {props.part3} {props.exercises3}
-      </p>
-     </div>
+    <p>{part1} {exercises1}</p>
+  )
+}
 
+const Part2 = () =>{
 
+  const part2 = 'Using props to pass data'
+  const exercises2 = 7
 
+  return (
+
+    <p>
+    {part2} {exercises2}
+  </p>
+  )
+}
+
+const Part3 = () => {
+
+  const part3 = 'State of a component'
+  const exercises3 = 14
+
+  return (
+
+    <p>{part3} {exercises3} </p>
+  )
+}
+const Content = (props) => {
+
+  return (
+    <>
+    <Part1/>
+    <Part2/>
+    <Part3/>
+
+   </>
   )
 
 }
