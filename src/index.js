@@ -5,8 +5,52 @@ const Title = (props) =>{
 
   return (<h1>{props.course}</h1>)
 
-  
 
+}
+
+const ParagraphOne = (props) => {
+
+  return (
+
+    <p>
+    {props.part1} {props.exercises1}
+  </p>
+  )
+
+}
+
+const ParagraphTwo = (props) => {
+
+  return (
+
+    <p>
+    {props.part2} {props.exercises2}
+  </p>
+
+
+  )
+
+}
+
+const ParagraphThree = (props) => {
+
+  return (
+
+    <p>
+    {props.part3} {props.exercises3}
+  </p>
+  )
+}
+
+const ParagraphFour = (props) => {
+
+  return (
+
+    <p> Number of exercises {props.exercises1 + props.exercises2 + props.exercises3}</p>
+
+
+
+  )
 }
 
 const App = () => {
@@ -21,21 +65,15 @@ const App = () => {
   return (
     <div>
       <Title course = {course} />
-      <h1>{course}</h1>
       
-      <p>
-        {part1} {exercises1}
-      </p>
-      <p>
-        {part2} {exercises2}
-      </p>
-      <p>
-        {part3} {exercises3}
-      </p>
-      <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
-
+      < ParagraphOne part1={part1} exercises1 = {exercises1} />
       
+      <ParagraphTwo part2= {part2} exercises2= {exercises2} />
 
+      <ParagraphThree part3 = {part3} exercises3 = {exercises3} />
+
+      <ParagraphFour exercises1= {exercises1} exercises2 = {exercises2} exercises3 = {exercises3} />
+      
       
     </div>
 
